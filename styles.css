@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    overflow: hidden;
-}
-
 .container{
     width: 80%;
     height: 80vh;
@@ -54,10 +50,6 @@ body{
     background-color: rgb(82, 20, 141);
     border: 2px solid black;
     cursor: pointer;
-}
-
-.btn-start:hover{
-    background-color: rgb(60, 14, 102);
 }
 
 .section-word-display p{
