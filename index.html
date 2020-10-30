@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
     <title>Type Speed Tester</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="section-word-display" id="word-display"></div>
+        <div class="section-text-input">
+            <input type="text" class="text-input" id="input" oninput="checkText()" style="display: none;">
+        </div>
+        <div class="section-timer">
+            <p id="timer">60</p>
+        </div>
+        <div class="options">
+            <button class="btn-start" id="start">Start</button>
+            <!-- <button class="btn btn-restart" id="restart">Restart</button> -->
+        </div>
+        <div class="results" style="display: none;">
+            <p>WPM <span id="wpm">0</span></p>
+            <p>Words <span>0</span></p>
+            <p>Accuracy <span>0</span></p>
+        </div>
+    </div>
 </body>
 </html>
