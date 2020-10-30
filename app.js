@@ -84,3 +84,21 @@ function checkText(){
         }
     }
 }
+
+let time = 60;
+
+function countDown(){
+    time--;
+    timer.innerText = time;
+
+    if(time == 0){
+        clearInterval(countDownTimer);
+        showResults();
+        input.style.display = "none";
+    }
+}
+
+function showResults(){
+    results.style.display = "block";
+    wpm.innerText = correctWords;
+}
